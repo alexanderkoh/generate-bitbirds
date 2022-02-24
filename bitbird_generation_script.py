@@ -42,14 +42,14 @@ for x in range(0, 50):
     d = randint(0,1000)
     seed(d)
 
-    #eye "white" color
-    # if random number between 1-1000 is 47 or less - Crazy Eyes!
+    #eew "white" color
+    # if random number between 1-1000 is 47 or less - Crazy Eews!
     if d > 47:
-        # normal eyes are always the same color
+        # normal eews are always the same color
         ew = (240,248,255)
         ey = (0, 0, 0)
     else:
-        # crazy eyes have the same (154, 0, 0) pupil and a random 'eye white' color
+        # crazy eews have the same (154, 0, 0) pupil and a random 'eew white' color
         ew = (randint(0, 256), randint(0, 256), randint(0, 256))
         ey = (154, 0, 0)
     e = randint(0,1000)
@@ -75,7 +75,7 @@ for x in range(0, 50):
     # outline color
     ol = (0, 0, 0)
 
-    basic_bird = [
+    '''basic_bird = [
         [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
         [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
         [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
@@ -100,7 +100,7 @@ for x in range(0, 50):
         [bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, th, th, th, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
         [bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, th, th, th, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
         [bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, th, th, th, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg]
-    ]
+    ]'''
 
     woodpecker = [
         [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
@@ -208,6 +208,41 @@ for x in range(0, 50):
         [bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, th, th, th, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
         [bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, th, th, th, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
         [bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, th, th, th, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg]
+    ]
+
+    basic_bird = [
+        [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
+        [bg, ol, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, ol, ol, bg],
+        [bg, ol, ol, ol, ol, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, ol, ol, ol, ol, bg],
+        [bg, bg, ol, ol, ol, ol, ol, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, ol, ol, ol, ol, ol, ol, bg, bg],
+        [bg, bg, ol, ol, hd, hd, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, hd, hd, hd, hd, ol, bg, bg, bg],
+        [bg, bg, bg, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, bg, bg, bg, bg],
+        [bg, bg, bg, ol, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, bg, bg, bg, bg],
+        [bg, bg, bg, bg, ol, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, ol, bg, bg, bg, bg],
+        [bg, bg, bg, bg, ol, hd, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, hd, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, ol, hd, th, ol, ol, ol, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, ol, hd, hd, ol, bg, bg, bg, bg],
+        [bg, bg, bg, bg, ol, th, th, th, th, th, th, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, th, th, th, th, ol, bg, bg, bg, bg],
+        [bg, bg, bg, ol, ol, th, th, th, th, th, ol, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, th, th, th, th, ol, ol, bg, bg, bg],
+        [bg, bg, bg, ol, th, th, th, th, th, th, ol, ol, ol, hd, hd, hd, hd, hd, hd, hd, hd, ol, ol, ol, th, th, th, th, ol, bg, bg, bg],
+        [bg, bg, bg, ol, th, th, th, th, th, ol, ol, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, ol, ol, th, th, th, th, ol, bg, bg, bg],
+        [bg, bg, ol, th, th, th, th, th, ol, ol, ol, ol, ol, ol, hd, hd, hd, hd, hd, ol, ol, ol, ol, ol, ol, th, th, th, ol, ol, bg, bg],
+        [bg, bg, ol, th, th, th, th, ol, ol, ol, ew, ew, ew, ol, ol, hd, hd, hd, ol, ew, ew, ew, ol, ol, ol, ol, th, th, th, ol, bg, bg],
+        [bg, bg, ol, th, th, th, th, ol, ol, ol, ew, ew, ew, ol, ol, ol, ol, ol, ol, ew, ew, ew, ol, ol, ol, ol, ol, th, th, ol, bg, bg],
+        [bg, ol, ol, th, th, th, ol, ol, ol, ol, ew, ew, ew, ol, bk, bk, bk, bk, ol, ew, ew, ew, ol, ol, ol, ol, ol, th, th, hd, ol, bg],
+        [bg, ol, th, th, th, ol, ol, ol, ol, ol, ol, ol, ol, ol, bk, ol, ol, ol, bk, ol, ol, ol, ol, ol, ol, ol, ol, ol, hd, hd, ol, bg],
+        [bg, ol, ol, th, th, ol, ol, ol, ol, ol, ol, ol, ol, bk, bk, ol, ol, ol, bk, bk, ol, ol, ol, ol, ol, ol, ol, ol, hd, hd, ol, bg],
+        [bg, bg, ol, ol, ol, ol, ol, ol, hd, hd, hd, hd, hd, hd, bk, bk, ol, bk, bk, hd, hd, ol, ol, ol, ol, ol, ol, ol, hd, ol, bg, bg],
+        [bg, bg, bg, ol, ol, ol, ol, hd, hd, hd, hd, hd, hd, hd, ol, bk, bk, bk, ol, hd, hd, hd, hd, ol, ol, ol, ol, ol, ol, bg, bg, bg],
+        [bg, bg, bg, bg, ol, ol, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, ol, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, bg, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, bg, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, bg, bg, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, bg, bg, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, bg, bg, bg, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, ol, hd, hd, hd, hd, hd, hd, hd, hd, hd, hd, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, ol, ol, ol, ol, ol, ol, ol, ol, ol, ol, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
+        [bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg, bg],
     ]
 
     # choose which bird image to use
